@@ -26,6 +26,15 @@ orgs.newOrg('eclipse-jdtls') {
       ],
     },
   ],
+  secrets+: [
+    orgs.newOrgSecret('ECLIPSE_GITLAB_API_TOKEN') {
+      selected_repositories+: [
+        "eclipse.jdt.ls"
+      ],
+      value: "pass:bots/eclipse.jdt.ls/gitlab.eclipse.org/api-token",
+      visibility: "selected",
+    },
+  ],
   _repositories+:: [
     orgs.newRepo('eclipse-jdt-core-incubator') {
       allow_merge_commit: true,
