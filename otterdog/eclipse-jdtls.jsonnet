@@ -12,6 +12,7 @@ orgs.newOrg('eclipse-jdtls') {
     web_commit_signoff_required: false,
     workflows+: {
       actions_can_approve_pull_request_reviews: false,
+      default_workflow_permissions: "write",
     },
   },
   webhooks+: [
@@ -45,6 +46,7 @@ orgs.newOrg('eclipse-jdtls') {
       web_commit_signoff_required: false,
       workflows+: {
         actions_can_approve_pull_request_reviews: false,
+        default_workflow_permissions: "write",
       },
     },
     orgs.newRepo('eclipse.jdt.ls') {
