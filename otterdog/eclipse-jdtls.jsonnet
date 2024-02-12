@@ -43,6 +43,7 @@ orgs.newOrg('eclipse-jdtls') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
+      allow_merge_commit: false,
       workflows+: {
         actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
