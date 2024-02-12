@@ -34,8 +34,8 @@ orgs.newOrg('eclipse-jdtls') {
   ],
   _repositories+:: [
     orgs.newRepo('eclipse-jdt-core-incubator') {
-      allow_merge_commit: true,
-      allow_update_branch: false,
+      allow_merge_commit: false,
+      allow_update_branch: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
