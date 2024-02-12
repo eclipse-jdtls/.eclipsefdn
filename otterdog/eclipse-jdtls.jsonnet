@@ -34,8 +34,8 @@ orgs.newOrg('eclipse-jdtls') {
   ],
   _repositories+:: [
     orgs.newRepo('eclipse-jdt-core-incubator') {
-      allow_merge_commit: true,
-      allow_update_branch: false,
+      allow_merge_commit: false,
+      allow_update_branch: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
@@ -43,7 +43,6 @@ orgs.newOrg('eclipse-jdtls') {
       secret_scanning: "disabled",
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
-      allow_merge_commit: false,
       workflows+: {
         actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
