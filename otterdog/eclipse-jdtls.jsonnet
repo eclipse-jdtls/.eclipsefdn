@@ -32,8 +32,6 @@ orgs.newOrg('eclipse-jdtls') {
   ],
   _repositories+:: [
     orgs.newRepo('eclipse-jdt-core-incubator') {
-      allow_merge_commit: false,
-      allow_update_branch: true,
       default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
@@ -42,7 +40,6 @@ orgs.newOrg('eclipse-jdtls') {
       secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
-        actions_can_approve_pull_request_reviews: false,
         default_workflow_permissions: "write",
       },
     },
@@ -62,9 +59,6 @@ orgs.newOrg('eclipse-jdtls') {
         "language-server-protocol"
       ],
       web_commit_signoff_required: false,
-      workflows+: {
-        actions_can_approve_pull_request_reviews: false,
-      },
       webhooks: [
         orgs.newRepoWebhook('https://hooks.waffle.io/api/projects/57e1520d88710fd001c25c9e/sources/57e15250097d9e01017605f3/receive') {
           content_type: "json",
