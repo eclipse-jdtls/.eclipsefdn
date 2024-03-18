@@ -2,4 +2,4 @@
 *             @eclipse-jdtls/eclipsefdn-releng
 
 # Otterdog related configurations are also owned by the security team.
-/otterdog/**  @eclipse-jdtls/eclipsefdn-security @eclipse-jdtls/eclipsefdn-releng
+/otterdog/**  @eclipse-jdtls/eclipsefdn-security
