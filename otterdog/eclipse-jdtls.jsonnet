@@ -31,7 +31,7 @@ orgs.newOrg('eclipse-jdtls') {
   ],
   _repositories+:: [
     orgs.newRepo('eclipse-jdt-core-incubator') {
-      default_branch: "master",
+      default_branch: "dom-with-javac",
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       has_discussions: true,
