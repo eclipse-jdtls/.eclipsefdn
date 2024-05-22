@@ -35,8 +35,6 @@ orgs.newOrg('eclipse-jdtls') {
       delete_branch_on_merge: false,
       dependabot_alerts_enabled: false,
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       web_commit_signoff_required: false,
       workflows+: {
         default_workflow_permissions: "write",
@@ -49,8 +47,6 @@ orgs.newOrg('eclipse-jdtls') {
       dependabot_security_updates_enabled: true,
       description: "Java language server",
       has_discussions: true,
-      secret_scanning: "disabled",
-      secret_scanning_push_protection: "disabled",
       squash_merge_commit_title: "PR_TITLE",
       topics+: [
         "eclipse",
