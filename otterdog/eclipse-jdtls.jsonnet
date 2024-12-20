@@ -1,6 +1,6 @@
 local orgs = import 'vendor/otterdog-defaults/otterdog-defaults.libsonnet';
 
-orgs.newOrg('eclipse-jdtls') {
+orgs.newOrg('eclipse.jdt.ls', 'eclipse-jdtls') {
   settings+: {
     description: "",
     name: "Eclipse JDT LS",
