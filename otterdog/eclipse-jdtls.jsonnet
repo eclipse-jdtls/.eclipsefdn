@@ -40,7 +40,6 @@ orgs.newOrg('eclipse.jdt.ls', 'eclipse-jdtls') {
     },
     orgs.newRepo('eclipse.jdt.ls') {
       allow_update_branch: false,
-      default_branch: "master",
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Java language server",
@@ -97,7 +96,7 @@ orgs.newOrg('eclipse.jdt.ls', 'eclipse-jdtls') {
         },
       ],
       branch_protection_rules: [
-        orgs.newBranchProtectionRule('master') {
+        orgs.newBranchProtectionRule('main') {
           required_approving_review_count: null,
           requires_pull_request: false,
           requires_status_checks: false,
