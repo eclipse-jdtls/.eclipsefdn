@@ -38,6 +38,16 @@ orgs.newOrg('eclipse.jdt.ls', 'eclipse-jdtls') {
         default_workflow_permissions: "write",
       },
     },
+    orgs.newRepo('eclipse.jdt.javac') {
+      default_branch: "main",
+      delete_branch_on_merge: false,
+      dependabot_alerts_enabled: false,
+      has_discussions: true,
+      web_commit_signoff_required: false,
+      workflows+: {
+        default_workflow_permissions: "write",
+      },
+    },
     orgs.newRepo('eclipse.jdt.ls') {
       allow_update_branch: false,
       delete_branch_on_merge: false,
