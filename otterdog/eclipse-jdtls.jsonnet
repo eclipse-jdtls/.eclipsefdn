@@ -49,7 +49,7 @@ orgs.newOrg('eclipse.jdt.ls', 'eclipse-jdtls') {
       },
     },
     orgs.newRepo('eclipse.jdt.ls') {
-      allow_update_branch: false,
+      allow_update_branch: true,
       delete_branch_on_merge: false,
       dependabot_security_updates_enabled: true,
       description: "Java language server",
